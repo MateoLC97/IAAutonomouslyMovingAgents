@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 745122597}
+  sphere: {fileID: 0}
 --- !u!195 &413172966
 NavMeshAgent:
   m_ObjectHideFlags: 0
