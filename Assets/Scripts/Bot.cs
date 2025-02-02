@@ -138,7 +138,7 @@ public class Bot : MonoBehaviour {
         Vector3 rayToTarget = target.transform.position - transform.position;
         if (Physics.Raycast(transform.position, rayToTarget, out raycastInfo)) {
 
-            if (raycastInfo.transform.gameObject.tag == "cop") return true;
+            if (raycastInfo.transform.gameObject.CompareTag("cop")) return true;
         }
         return false;
     }
@@ -150,7 +150,8 @@ public class Bot : MonoBehaviour {
         // Pursue();
         // Evade();
         // Wander();
-         Hide();
-        //if (CanSeeTarget()) CleverHide();
+        // Hide();
+        //CleverHide();
+        if (CanSeeTarget()) CleverHide();
     }
 }
